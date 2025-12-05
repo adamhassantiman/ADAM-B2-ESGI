@@ -1,0 +1,15 @@
+git log --oneline : Cette commande affiche l’historique des commits sous forme condensée. Elle permet de voir rapidement les identifiants et les messages des commits.
+
+git show f01afb4 : Cette commande montre les détails du commit choisi (ici celui du chapitre 2). On y voit le message, l’auteur, la date et les modifications apportées.
+
+git diff 81fd769 f01afb4 : Cette commande compare deux versions du projet entre deux commits. Elle permet de voir les différences entre le fichier avec seulement le chapitre 1 et celui avec le chapitre 2.
+
+git commit --amend -m "..." : Cette commande modifie le message du dernier commit. Elle est utile pour corriger ou préciser un message trop vague.
+
+git reset --soft f01afb4 : Cette commande revient à l’état du projet après le commit du chapitre 2. Elle conserve les fichiers intacts mais annule les commits suivants.
+
+git revert f01afb4 : Cette commande crée un nouveau commit qui annule les changements du commit du chapitre 2. C’est une manière propre d’annuler un commit sans casser l’historique.
+
+git stash : Cette commande sauvegarde temporairement les modifications en cours sans les valider. Elle permet de mettre de côté du travail pour revenir à un état propre.
+
+git stash pop : Cette commande récupère les modifications sauvegardées avec git stash. Elle réapplique les changements dans le projet.
